@@ -1,0 +1,17 @@
+--1--
+SELECT * FROM film
+WHERE title ~~* '%n'
+ORDER BY length ASC
+LIMIT 5;
+
+--2--
+SELECT * FROM film
+WHERE title ~~* '%n'
+ORDER BY length DESC 
+OFFSET 5
+LIMIT 5;
+
+--3--
+SELECT * FROM customer
+WHERE store_id IN(1)
+LIMIT 4;
